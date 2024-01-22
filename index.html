@@ -3,27 +3,268 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="
+  https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css
+  "
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="style.css" />
     <title>Menu</title>
   </head>
+
   <body>
-    <div class="page-loader">
-      <div class="cup">
-        <div class="handle"></div>
-      </div>
+    <div data-scroll-container onscroll="getMenuNavigator">
+      <section class="container1">
+        <div>
+          <!-- <img src="gallery-imgs/removed bg logo.png" alt="" srcset="" /> -->
+          <img id="pic1" src="cafefood.jpg" alt="" />
+          <img id="pic2" src="pic2.jpg" alt="" srcset="" />
+          <img id="pic3" src="pic3.avif" alt="" srcset="" />
+          <img id="pic4" src="pic4.jpg" alt="" srcset="" />
+          <img id="pic5" src="pic5.jpg" alt="" srcset="" />
+          <div class="text">
+            <h1>MenuKart</h1>
+            <h2>DISCOVER OUR DELICACIES</h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="container2">
+        <div class="menu-navigator">
+          <ul id="menu-table">
+            <li>Classics</li>
+            <li>Specials</li>
+            <li>Tea</li>
+          </ul>
+        </div>
+
+        <div class="parent">
+          <!-- Row 1 -->
+          <div class="div1">
+            <h1>Classics</h1>
+          </div>
+          <div class="div2">
+            <h3>Small</h3>
+          </div>
+          <div class="div3">
+            <h3>Mid</h3>
+          </div>
+          <div class="div4">
+            <h3>Big</h3>
+          </div>
+          <!-- Row 2 -->
+          <div class="div5">
+            <h3>Tea 1</h3>
+            <h5>Fragrant and soothing</h5>
+          </div>
+          <div class="div6">1.5</div>
+          <div class="div7">2.5</div>
+          <div class="div8">3.5</div>
+
+          <!-- Row 3 -->
+          <div class="div9">
+            <h3>Pastry 1</h3>
+            <h5>Flaky and delicious</h5>
+          </div>
+          <div class="div10">2.5</div>
+          <div class="div11">3.5</div>
+          <div class="div12">4.5</div>
+
+          <!-- Row 4 -->
+          <div class="div13">
+            <h3>Sandwich 1</h3>
+            <h5>Fresh and filling</h5>
+          </div>
+          <div class="div14">5</div>
+          <div class="div15">6</div>
+          <div class="div16">7</div>
+
+          <!-- Row 5 -->
+          <div class="div17">
+            <h3>Smoothie 1</h3>
+            <h5>Fruity and refreshing</h5>
+          </div>
+          <div class="div18">4</div>
+          <div class="div19">5</div>
+          <div class="div20">6</div>
+
+          <!-- Row 6 -->
+          <div class="div21">
+            <h3>Cake 1</h3>
+            <h5>Sweet and indulgent</h5>
+          </div>
+          <div class="div22">3</div>
+          <div class="div23">4</div>
+          <div class="div24">5</div>
+
+          <!-- Row 7 -->
+          <div class="div25">
+            <h3>Juice 1</h3>
+            <h5>Natural and energizing</h5>
+          </div>
+          <div class="div26">3.5</div>
+          <div class="div27">4.5</div>
+          <div class="div28">5.5</div>
+
+          <!-- Row 8 -->
+          <div class="div29">
+            <h3>Salad 1</h3>
+            <h5>Healthy and fresh</h5>
+          </div>
+          <div class="div30">6</div>
+          <div class="div31">7</div>
+          <div class="div32">8</div>
+        </div>
+      </section>
+
+      <section class="container3">
+        <div class="new-parent">
+          <!-- Row 1 -->
+          <div class="div1">
+            <h1>Specials</h1>
+          </div>
+          <div class="div2">
+            <h3>Small</h3>
+          </div>
+          <div class="div3">
+            <h3>Mid</h3>
+          </div>
+          <div class="div4">
+            <h3>Big</h3>
+          </div>
+
+          <!-- Row 2 -->
+          <div class="new-div5">
+            <h3>Signature Tea 1</h3>
+            <h5>Exquisite flavor and aroma</h5>
+          </div>
+          <div class="new-div6">2.5</div>
+          <div class="new-div7">3.5</div>
+          <div class="new-div8">4.5</div>
+
+          <!-- Row 3 -->
+          <div class="new-div9">
+            <h3>Deluxe Pastry 1</h3>
+            <h5>Decadent and indulgent</h5>
+          </div>
+          <div class="new-div10">4</div>
+          <div class="new-div11">5</div>
+          <div class="new-div12">6</div>
+
+          <!-- Row 4 -->
+          <div class="new-div13">
+            <h3>Premium Sandwich 1</h3>
+            <h5>Gourmet ingredients</h5>
+          </div>
+          <div class="new-div14">7</div>
+          <div class="new-div15">8</div>
+          <div class="new-div16">9</div>
+
+          <!-- Row 5 -->
+          <div class="new-div17">
+            <h3>Super Smoothie 1</h3>
+            <h5>Nutrient-packed and energizing</h5>
+          </div>
+          <div class="new-div18">5</div>
+          <div class="new-div19">6</div>
+          <div class="new-div20">7</div>
+
+          <!-- Row 6 -->
+          <div class="new-div21">
+            <h3>Decadent Cake 1</h3>
+            <h5>Rich and sweet indulgence</h5>
+          </div>
+          <div class="new-div22">4.5</div>
+          <div class="new-div23">5.5</div>
+          <div class="new-div24">6.5</div>
+        </div>
+      </section>
+
+      <section class="container3">
+        <div class="tea-parent">
+          <!-- Row 1 -->
+          <div class="div1">
+            <h1>Tea</h1>
+          </div>
+          <div class="div2">
+            <h3>Small</h3>
+          </div>
+          <div class="div3">
+            <h3>Mid</h3>
+          </div>
+          <div class="div4">
+            <h3>Big</h3>
+          </div>
+
+          <!-- Row 2 -->
+          <div class="tea-div5">
+            <h3>Green Tea</h3>
+            <h5>Traditional Japanese green tea</h5>
+          </div>
+          <div class="tea-div6">2</div>
+          <div class="tea-div7">3</div>
+          <div class="tea-div8">4</div>
+
+          <!-- Row 3 -->
+          <div class="tea-div9">
+            <h3>Chamomile</h3>
+            <h5>Gentle and calming herbal tea</h5>
+          </div>
+          <div class="tea-div10">2.5</div>
+          <div class="tea-div11">3.5</div>
+          <div class="tea-div12">4.5</div>
+
+          <!-- Row 4 -->
+          <div class="tea-div13">
+            <h3>Peppermint</h3>
+            <h5>Refreshing and invigorating herbal tea</h5>
+          </div>
+          <div class="tea-div14">2</div>
+          <div class="tea-div15">3</div>
+          <div class="tea-div16">4</div>
+
+          <!-- Row 5 -->
+          <div class="tea-div17">
+            <h3>Oolong</h3>
+            <h5>Partially fermented traditional Chinese tea</h5>
+          </div>
+          <div class="tea-div18">3</div>
+          <div class="tea-div19">4</div>
+          <div class="tea-div20">5</div>
+
+          <!-- Row 6 -->
+          <div class="tea-div21">
+            <h3>Hibiscus</h3>
+            <h5>Tart and fruity herbal infusion</h5>
+          </div>
+          <div class="tea-div22">2.5</div>
+          <div class="tea-div23">3.5</div>
+          <div class="tea-div24">4.5</div>
+
+          <!-- Row 7 -->
+          <div class="tea-div25">
+            <h3>Chai</h3>
+            <h5>Spiced Indian black tea</h5>
+          </div>
+          <div class="tea-div26">3</div>
+          <div class="tea-div27">4</div>
+          <div class="tea-div28">5</div>
+        </div>
+      </section>
     </div>
-    <div class="container1">
-      <img id="pic1" src="images/cafefood.jpg" alt="" />
-      <img id="pic2" src="images/pic2.jpg" alt="" srcset="" />
-      <img id="pic3" src="images/pic3.avif" alt="" srcset="" />
-      <img id="pic4" src="images/pic4.jpg" alt="" srcset="" />
-      <img id="pic5" src="images/pic5.jpg" alt="" srcset="" />
-      <div class="text">
-        <h1>MenuKart</h1>
-        <h2>ONTDEK ONZE LEKKERNIJEN</h2>
-      </div>
-    </div>
+    <script src="
+  https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js
+  "></script>
 
     <script src="index.js"></script>
   </body>
